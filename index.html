@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map and Video Switch</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Vortex Vision</h1>
+    </header>
+
+    <main>
+        <!-- Map Container -->
+        <section id="map-container">
+            <div id="map" style="height: 500px;"></div>
+            <button id="generate-video-btn">Generate Video</button>
+        </section>
+
+        <!-- Video Container, hidden by default -->
+        <section id="video-container" style="display: none;">
+            <video id="generated-video" controls style="width: 100%; max-height: 500px;">
+                <source id="video-source" src="videos/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br>
+            <button id="back-to-map-btn">Back to Map</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Interactive Map and Video System</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
